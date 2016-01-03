@@ -35,6 +35,10 @@ gem 'simple_form'
 
 # devise(login)
 gem 'devise'
+
+# Gravatarify
+gem 'gravatarify', '~> 3.1', '>= 3.1.1'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
