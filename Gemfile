@@ -32,6 +32,9 @@ gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootst
 # simple form
 gem 'simple_form'
 
+
+# devise(login)
+gem 'devise'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
