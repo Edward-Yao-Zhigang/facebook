@@ -7,13 +7,13 @@
 
 	   	<div class="col-md-4">
 	   		<h3><%= current_user.username %></h3>
-	   		<p>Age: </p>
-	   		<p>Gender: </p>
+	   		<p>Age: <%= current_user.age %></p>
+	   		<p>Gender: <%= current_user.gender %>
 	   	</div>
 
 	   	<div class="col-md-4">
 	   		<h3>Who am I</h3>
-	   		<small></small>
+	   		<small><%= current_user.bio %></small>
    		</div>
    	</div>
   </div>
