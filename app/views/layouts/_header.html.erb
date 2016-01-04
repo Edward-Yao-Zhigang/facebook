@@ -23,9 +23,10 @@
         <% end %>
       <ul class="nav navbar-nav navbar-right">
       <% if current_user %>
-      <li><a href="#"><%= gravatar_tag current_user.email, size: 22 %></a></li>
         <li>
-        <%= link_to current_user.username, user_path(current_user.username) %></li>
+        <%= link_to gravatar_tag(current_user.email, size: 22), user_path(current_user.username) %>
+         </li>
+         <li><%= link_to current_user.username, user_path(current_user.username) %></li>
         <li><%= link_to 'Home', root_path %></li>
         <li><%= link_to 'Timeline', root_path %></li>
         <li><%= link_to 'Friends', root_path %></li>
