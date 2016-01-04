@@ -24,13 +24,15 @@
       <ul class="nav navbar-nav navbar-right">
       <% if current_user %>
         <li>
-        <%= link_to gravatar_tag(current_user.email, size: 22), user_path(current_user.username) %>
-         </li>
-         <li><%= link_to current_user.username, user_path(current_user.username) %></li>
+          <%= link_to user_path(current_user.username) do %>
+          <%= gravatar_tag current_user.email, size: 22 %>
+          <%= current_user.username %>
+          <% end %>
+        </li>
         <li><%= link_to 'Home', root_path %></li>
         <li><%= link_to 'Timeline', root_path %></li>
         <li><%= link_to 'Friends', root_path %></li>
-        <li><%= link_to 'People', root_path %></li>
+        <li><%= link_to 'People', users_path %></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-chevron-down" aria-hidden="true"></span></a>
           <ul class="dropdown-menu" role="menu">
