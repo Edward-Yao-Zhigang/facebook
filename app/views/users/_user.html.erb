@@ -5,7 +5,9 @@
 		<% end %>
 		<div class="caption text-center">
 			<h3><%= link_to user.username, user_path(user.username) %></h3>
-			<p><%= action_buttons(user) %></p>
+			<% if current_user %>
+				<p><%= action_buttons(user) %></p>
+			<% end %>
 		</div>
 	</div>
 </div>
