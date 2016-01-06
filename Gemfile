@@ -39,6 +39,9 @@ gem 'devise'
 # Gravatarify
 gem 'gravatarify', '~> 3.1', '>= 3.1.1'
 
+#public_activity
+gem 'public_activity', '~> 1.4', '>= 1.4.2'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 
