@@ -42,6 +42,8 @@ gem 'gravatarify', '~> 3.1', '>= 3.1.1'
 #public_activity
 gem 'public_activity', '~> 1.4', '>= 1.4.2'
 
+# auto_html
+gem 'auto_html', '~> 2.0'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
